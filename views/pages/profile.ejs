@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Node Authentication - Profile Page</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Link to Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Custom styles -->
+  <style>
+    body {
+      padding-top: 80px;
+      word-wrap: break-word;
+      background-color: #f8f9fa; /* Set a light background color */
+    }
+
+    .container {
+      background-color: #ffffff; /* Set a white background color */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+      border-radius: 10px; /* Add rounded corners */
+      padding: 20px; /* Add some padding */
+    }
+
+    .page-header {
+      padding-bottom: 20px; /* Add space below the header */
+    }
+
+    .wall {
+      padding: 20px; /* Add padding to the wall section */
+      background-color: #f1f3f5; /* Set a light gray background color */
+      border-radius: 8px; /* Add rounded corners to the wall section */
+    }
+
+    img {
+      border-radius: 50%; /* Make the profile picture round */
+    }
+
+    /* Add any additional styles as needed */
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header text-center">
+      <h1><i class="bi bi-person-circle"></i> Profile Page</h1>
+      <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="wall">
+          <h3 class="text-primary"><i class="bi bi-google"></i> Google</h3>
+          <p>
+            <strong>Email:</strong> <%= email %> <br>
+            <strong>Name:</strong> <%= name %> <br>
+            <strong>Profile Picture:</strong> <img src="<%=pic%>" width="100" height="100" alt="Profile Picture">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
